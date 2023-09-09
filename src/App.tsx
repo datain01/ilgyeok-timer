@@ -71,10 +71,6 @@ const App: React.FC = () => {
 
   const toggleAudio = () => {
     setIsAudioOn(!isAudioOn);
-    if (!isAudioOn) {
-      // 사용자 상호작용을 통해 오디오를 재생합니다.
-      playAudio('/sound/ilpil_three.mp3');
-    }
   };
 
   return (
