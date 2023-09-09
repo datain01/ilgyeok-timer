@@ -47,10 +47,7 @@ const App: React.FC = () => {
     } else {
       resetTimer(); // seconds가 0이 되면 타이머를 초기화합니다.
     }
-  }, [seconds]);
-  
-  
-  
+  }, [seconds]);  
 
   const resetTimer = () => {
     if (intervalId) {
@@ -69,7 +66,6 @@ const App: React.FC = () => {
       return Math.max(0, newSeconds);
     });
   };
-  
 
   const toggleAudio = () => {
     setIsAudioOn(!isAudioOn);
@@ -89,11 +85,12 @@ const App: React.FC = () => {
         </div>
         <div>
           <button className="button is-info is-large" onClick={resetTimer}>초기화</button>
-        </div>
-        
+        </div>        
       </div>
-      <p className='has-text-grey-lighter mt-3'> "이 페이지의 음성은 인공지능 영상 제작 프로그램, 온에어스튜디오 OnAir Studio를 통해 제작되었습니다"
-#온에어스튜디오 #onairstudio https://abit.ly/onairstudio </p>
+      
+      <p className='has-text-centered'>made by datain <br/> contact: mystrange01@gmail.com</p>
+      <p className='has-text-grey-lighter mt-3 has-text-centered'> "이 페이지의 음성은 인공지능 영상 제작 프로그램, 온에어스튜디오 OnAir Studio를 통해 제작되었습니다" <br/>
+          #온에어스튜디오 #onairstudio https://abit.ly/onairstudio </p>
     </div>
 
   );
